@@ -1,0 +1,126 @@
+.container {
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    background: linear-gradient(
+        45deg,
+        #6d5bba,
+        #8f7dc9,
+        #a9a7d0,
+        #c0d6df,
+        #e5ffff
+    );
+    height: 100%;
+}
+
+.heading {
+    margin: 0 auto;
+    max-width: 700px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.heading span {
+    background-clip: text;
+    background-image: linear-gradient(to right, #f5df4d, #f64747);
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        display: flex;
+        font-size: 1.2em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        object-fit: contain;
+        overflow: hidden;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+    .right img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .container {
+        display: flex;
+        font-size: 1.2em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        object-fit: contain;
+        overflow: hidden;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+    .right img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .container {
+        display: flex;
+        font-size: 1em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        object-fit: contain;
+        overflow: hidden;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+    .right img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1201px) {
+    .container {
+        display: flex;
+        font-size: 1.2em;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+    .right img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}

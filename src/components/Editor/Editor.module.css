@@ -109,64 +109,139 @@
     box-shadow: 2px 2px 8px rgba(35, 156, 226, 0.4);
 }
 
-.body button {
-    width: fit-content;
+button {
     padding: 8px 16px;
     border-radius: 5px;
-    background-color: #239ce2;
+    background: linear-gradient(45deg, #fa71cd, #c471fa, #7193fa, #71d5fa);
     color: #fff;
-    outline: none;
     border: none;
     font-weight: 500;
-    font-size: 1rem;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
     display: flex;
-    gap: 5px;
+    justify-content: center;
     align-items: center;
+    transition: transform 0.2s ease;
     cursor: pointer;
-    transition: 200ms;
 }
 
 button:active {
     transform: translateY(2px);
 }
 
-/* For screens smaller than 550px */
-@media (max-width: 550px) {
+@media only screen and (max-width: 767px) {
     .container {
-        min-width: 100%;
+        min-width: auto;
+        min-height: auto;
         max-width: 100%;
-        min-height: 100vh;
-        height: 100%;
+        padding: 20px;
+        gap: 20px;
     }
+
     .header {
         overflow-x: scroll;
+        padding: 5px 0;
     }
+
+    .header .section {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .body {
+        padding: 20px;
+        gap: 10px;
+    }
+
     .detail .row {
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .detail .column {
+        gap: 5px;
+    }
+
+    .chips {
+        gap: 10px;
+    }
+
+    .chip p {
+        font-size: 0.8rem;
     }
 }
 
-/* For screens between 550px and 750px */
-@media (min-width: 550px) and (max-width: 750px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
-        min-width: 100%;
+        min-width: auto;
+        min-height: auto;
         max-width: 100%;
-        min-height: 100vh;
-        height: 100%;
+        padding: 30px;
+        gap: 30px;
     }
+
     .header {
         overflow-x: scroll;
+        padding: 10px 0;
+    }
+
+    .header .section {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+
+    .body {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .detail .row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .detail .column {
+        gap: 10px;
+    }
+
+    .chips {
+        gap: 20px;
+    }
+
+    .chip p {
+        font-size: 1rem;
     }
 }
 
-/* For screens larger than 750px */
-@media (min-width: 750px) {
+@media only screen and (min-width: 1025px) {
     .container {
         min-width: 550px;
-        max-width: 750px;
+        min-height: 450px;
+        max-width: 1200px;
+        padding: 30px;
+        gap: 30px;
     }
+
     .header {
         overflow-x: auto;
+        padding: 10px 0;
+    }
+
+    .header .section {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .body {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .detail .row {
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .detail .column {
+        gap: 20px;
     }
 }

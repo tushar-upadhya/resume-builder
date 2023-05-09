@@ -8,7 +8,7 @@ import Resume from "../Resume/Resume";
 import styles from "./Body.module.css";
 
 function Body() {
-    const colors = ["#ff7675", "#74b9ff", "#fdcb6e", "#a29bfe", "#ffeaa7"];
+    const colors = ["#ff7675", "#74b9ff", "#009688", "#303F9F", "#E64A19"];
 
     const sections = {
         basicInfo: "Basic Info",

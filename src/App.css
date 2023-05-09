@@ -1,5 +1,6 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #f0f0f0;
 }

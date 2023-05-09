@@ -5,14 +5,12 @@
     flex: 1.2;
     height: fit-content;
     min-height: 900px;
-    /* box-shadow: 10px 10px 32px 1px rgba(46, 41, 115, 0.75);
-    -webkit-box-shadow: 10px 10px 32px 1px rgba(46, 41, 115, 0.75);
-    -moz-box-shadow: 10px 10px 32px 1px rgba(46, 41, 115, 0.75); */
     display: flex;
+    box-shadow: 2px 2px 8px rgba(35, 156, 226, 0.4);
     flex-direction: column;
     gap: 30px;
     border-radius: 4px;
-    background-color: rgb(226, 226, 226, 0.8);
+    /* background: linear-gradient(to bottom, #264653, #4d88ff); */
     padding: 30px;
 }
 

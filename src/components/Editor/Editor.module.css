@@ -15,7 +15,6 @@
     display: flex;
     gap: 10px;
     overflow-x: auto;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header::-webkit-scrollbar {
@@ -37,10 +36,15 @@
 }
 
 .header .active {
-    border-bottom: 2px solid #239ce2;
     color: #239ce2;
     transition: all 0.3s ease-in-out;
 }
+
+.header .active:hover {
+    border-bottom: 2px solid #555;
+    color: #555;
+}
+
 .body {
     padding: 30px;
     display: flex;
@@ -105,7 +109,7 @@
 }
 
 .chips .active {
-    background-color: #239ce2;
+    background: linear-gradient(45deg, #b35e97, #a462d1, #7193fa, #71d5fa);
     box-shadow: 2px 2px 8px rgba(35, 156, 226, 0.4);
 }
 

@@ -29,7 +29,11 @@ const Footer = () => {
             <div className={styles.info}>
                 <p>
                     Copyright © {year}{" "}
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href="https://tusharupadhyay.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Tushar Upadhyay
                     </a>{" "}
                 </p>

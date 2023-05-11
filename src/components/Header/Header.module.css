@@ -1,11 +1,11 @@
 .container {
     padding: 50px;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-evenly;
-    gap: 50px;
+    /* gap: 50px; */
     background: linear-gradient(
         45deg,
         #6d5bba,
@@ -16,8 +16,12 @@
     );
     height: 100%;
 }
+/* 
+.right > img {
+    object-fit: contain;
+} */
 
-.heading {
+/* .heading {
     margin: 0 auto;
     max-width: 700px;
     color: #fff;
@@ -26,13 +30,13 @@
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-}
+} */
 
-.heading span {
+/* .heading span {
     background-clip: text;
     background-image: linear-gradient(to right, #f5df4d, #f64747);
     font-weight: lighter;
-}
+} */
 
 @media only screen and (max-width: 320px) {
     .container {

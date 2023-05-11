@@ -5,16 +5,19 @@ import resumeSvg from "../../assets/resume.svg";
 import styles from "./Header.module.css";
 
 function Header() {
+    //   A CV That Gets Noticed!
+
+    // Prepare your own résumé. It is completely free.
     return (
         <div className={styles.container}>
-            {/* <div className={styles.left}>
+            <div className={styles.left}>
                 <p className={styles.heading}>
-                    A <span>Resume</span> that stands out!
+                    A <span>CV </span> That Gets Noticed!
                 </p>
                 <p className={styles.heading}>
-                    Make your own resume. <span>It's free</span>
+                    Prepare your own résumé. <span>It's completely free</span>
                 </p>
-            </div> */}
+            </div>
             <div className={styles.right}>
                 <img src={resumeSvg} alt="Resume" />
             </div>
